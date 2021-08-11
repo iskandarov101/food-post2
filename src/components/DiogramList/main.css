@@ -1,0 +1,42 @@
+#apexcharts-radialbarTrack-0 , #apexcharts-radialbarTrack-2{
+    stroke-width:11px;
+    stroke: #353440;
+
+}
+#apexcharts-radialbarTrack-1 , #apexcharts-radialbarTrack-3 {
+    stroke-width:11px;
+    stroke: #2a2836;
+}
+
+.apexcharts-radialbar-slice-3{
+    display: none;
+}
+#SvgjsPath2239{
+    stroke: #65b0f6;
+}
+.apexcharts-radialbar-slice-1{
+    stroke: #ffb572;
+}
+.apexcharts-radialbar-slice-2{
+    stroke: #ff7ca3;
+}
+
+#SvgjsText1021{
+    fill: #EA7C69!important;
+}
+
+#SvgjsText1022{
+    fill: #fff;
+    font-size: 20px;
+
+}
+.apexcharts-canvas {
+    position: relative;
+    user-select: none;
+    left: -57px;
+    top: 16px;
+}
+.apexcharts-radialbar-area{
+    stroke-width:11px;
+    stroke-linecap: round;
+}

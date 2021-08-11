@@ -1,0 +1,100 @@
+.selected-item {
+  margin-top: 27px;
+
+  .item-info {
+      display: flex;
+      justify-content: space-between;
+
+      .left {
+          display: flex;
+
+          img {
+              width: 40px;
+              margin-right: 5px;
+              height: 40px;
+              border-radius: 50%;
+              object-fit: cover;
+          }
+
+          .item-text {
+              h3 {
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 14px;
+                  line-height: 130%;
+                  margin-bottom: 4px;
+                  color: #FFFFFF;
+              }
+
+              p {
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 12px;
+                  line-height: 140%;
+                  color: #ABBBC2;
+              }
+          }
+      }
+
+      .right {
+          align-items: center;
+          display: flex;
+
+          .quantity {
+              width: 48px;
+              color: white;
+              height: 48px;
+              background: #2D303E;
+              display: flex;
+              margin-right: 21px;
+              justify-content: center;
+              align-items: center;
+              border: 1px solid #393C49;
+              box-sizing: border-box;
+              border-radius: 8px;
+          }
+
+          .price {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 140%;
+              text-align: right;
+              color: #FFFFFF;
+          }
+      }
+  }
+
+  .item-comment {
+      margin-top: 10px;
+      display: flex;
+
+      input {
+          width: 100%;
+          padding: 14px 96px 14px 14px;
+          background: #2D303E;
+          font-family: Barlow;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          margin-right: 16px;
+          line-height: 140%;
+          border: 1px solid #393C49;
+          box-sizing: border-box;
+          border-radius: 8px;
+      }
+
+      button {
+          width: 54px;
+          height: 48px;
+          background: none;
+          border: 1px solid #FF7CA3;
+          box-sizing: border-box;
+          border-radius: 8px;
+
+          svg {
+              fill: #FF7CA3
+          }
+      }
+  }
+}

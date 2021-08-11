@@ -1,0 +1,24 @@
+.diogram{
+    /* width: 100%; */
+    background: #1F1D2B;
+    border-radius: 8px;
+    height: auto;
+    margin: 24px 24px 24px 0;
+    padding: 24px;
+}
+.diogram-head{
+    border-bottom: 1px solid #393C49;
+    padding: 0  24px 16px;
+}
+.diogram-text{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+.custom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

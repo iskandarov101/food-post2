@@ -1,0 +1,25 @@
+.filter{
+    background: #1F1D2B;
+    border: 1px solid #393C49;
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 15px;
+}
+.filter::before{
+    content: "";
+    display: block;
+    background-image: url("../../assets/images/Option.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    margin-right: 11px;
+}

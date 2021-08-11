@@ -1,0 +1,47 @@
+.custominfo h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 2px;
+}
+.custominfo p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #ABBBC2;
+    margin: 0;
+}
+.red{
+    background: #FF7CA3;
+}
+.yellow{
+   background: #FFB572;
+}
+.pink{
+   background: #65B0F6;
+}
+.custominfo span{
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 9px;
+}
+.custominfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#chart{
+    position: relative;
+}
+.customersBox{
+    margin-left: -115px;
+}

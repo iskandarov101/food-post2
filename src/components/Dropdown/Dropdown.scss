@@ -1,0 +1,85 @@
+.open .list {
+  background-color: #EA7C69;
+  display: block;
+  color: white;
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+  padding: 8px 0;
+  padding-left: 5px;
+}
+
+.drop {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.list {
+  display: none;
+}
+
+.toggle {
+  background: #1F1D2B;
+  border: 1px solid #393C49;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: white;
+  // display: flex;
+  align-items: center;
+  // padding: 10px;
+  display: inline-flex;
+}
+
+.line::before {
+  content: "";
+  display: block;
+  width: 8px;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  height: 8px;
+  transform: translate(0px, -2px) rotate(-45deg);
+  transition: 0.3s;
+  margin-right: 8px;
+}
+
+.line {
+  width: 67px;
+  // margin-right: 10px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+}
+
+
+.open .line:before {
+  transition: 0.3s;
+  transform: translate(0px, 1px) rotate(135deg);
+}
+
+.open .line:after {
+  transition: 0.3s;
+
+  transform: translate(5px, -1px) rotate(-135deg);
+}
+
+.drop-link {
+  display: block;
+  display: block;
+  padding: 7px 0;
+  text-align: center;
+}
+
+.drop-link:hover {
+  background: #0f0e0e;
+
+}
+
+
+
+

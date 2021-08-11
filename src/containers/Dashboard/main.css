@@ -1,0 +1,31 @@
+
+.dashboard-head{
+    border-bottom: 1px solid #393C49;
+}
+.dashboard{
+    width: 100%;
+}
+.dashboard-title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    color: #fff;
+    margin: 0;
+    
+}
+.dashboard-data{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #ABBBC2;
+    margin: 0;
+    margin-top: 4px;
+    margin-bottom: 24px;
+}
+.dashboard-page{
+    padding: 24px;
+    background-color: #252836;
+    width: 100%;
+}

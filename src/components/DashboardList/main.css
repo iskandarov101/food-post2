@@ -1,0 +1,45 @@
+.dashboardList{
+    background: #1F1D2B;
+    border-radius: 8px;
+    font-family: "Barlow",sans-serif;
+    padding: 16px;
+    width: 250px;
+}
+.list-row{
+    display: flex;
+    align-items: center;
+}
+.num{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    color: #50D1AA;
+    display: block;
+    margin: 0 6px 0 12px;
+}
+.total{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin: 8px 0;
+}
+.dashTitle{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #ABBBC2;
+}
+.dashboardList .icon{
+    width: 18px;
+    height: 18px;
+}
+.dash{
+    margin: 24px 0;
+}
+.dashboardList:nth-child(2) .num{
+    color: #FF7CA3;
+}

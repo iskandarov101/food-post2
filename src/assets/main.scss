@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+    background: #252836;
+    overflow: hidden;
+    height: 100vh;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-left{
+    width: 70%;
+    padding: 24px 24px 0;
+    box-sizing: border-box;
+
+}
+
+.container-right{
+    width: 30%;
+}
+
+
+

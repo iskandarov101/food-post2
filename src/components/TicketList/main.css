@@ -1,0 +1,68 @@
+.ticketList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.ticket-wrapper{
+    font-family: "Barlow",sans-serif;
+   
+}
+.ticket-row{
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+.ticket-row img{
+    margin-right: 16px;
+}
+.ticket-name{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #E0E6E9;
+    width: 100%;
+}
+.ticket-menu{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    width: 50%;
+    color: #E0E6E9;
+}
+.ticket-total{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #E0E6E9;
+    width: 15%;
+}
+.btn-status{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    border-radius: 30px;
+    width: 15%;
+    padding: 6px 0;
+    border: none;
+    outline: none;
+}
+.Completed{
+    background: rgba(107, 226, 190, 0.24);
+    color: #50D1AA;
+}
+.Preparing{
+    background: rgba(146, 144, 254, 0.2);
+    color: #9290FE;
+}
+.Pending{
+    background: rgba(255, 181, 114, 0.2);
+    color: #FFB572;
+}
+.ticket-text_title{
+    width: 27%;
+}

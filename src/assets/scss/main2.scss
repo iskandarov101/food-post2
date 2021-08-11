@@ -1,0 +1,498 @@
+@import 'abstracts/mixins';
+@import './abstracts/variables';
+
+@import './base/base';
+@import './base/_layout.scss';
+
+@import './pages/homepage';
+@import './pages/settings';
+
+.setting-container{
+    width: 100%;
+    padding: 24px;
+}
+
+.site-layout-sub-header-background {
+    background: #fff;
+}
+
+.site-layout-background {
+    background: #fff;
+}
+  .ant-btn {
+    border: 1px solid #EA7C69 !important;
+    color: white !important;
+    margin-right: 8px !important;
+    display: inline-block !important;
+    background: none !important;
+
+    &.primary {
+      background: $color-primary-btn !important;
+      box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.4);
+
+    }
+  }
+
+.App {
+    height: 100vh
+}
+
+.ant-layout {
+    height: 100%;
+}
+
+.ant-layout-sider {
+    max-width: 105px !important;
+    width: 100%;
+    min-width: 105px !important;
+    background: $color-sidebar !important
+}
+
+.ant-menu {
+    padding: 12px 0 12px 12px !important;
+    height: 100vh;
+
+    &-item {
+        height: 80px !important;
+        display: flex !important;
+        align-items: center;
+        border-radius: 12px 0px 0px 12px;
+        transition: all ease 0s !important;
+        justify-content: center;
+        overflow: visible !important;
+        &:focus{
+              background-color: $color-background !important;
+              border-radius: 12px 0px 0px 12px;
+              position: relative;
+
+              &::after {
+                  content: '';
+                  position: absolute;
+                  transition: all ease 0s !important;
+                  top: 80px;
+                  right: 0;
+                  width: 12px;
+                  height: 12px;
+                  clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 73%, 79% 51%, 64% 34%, 49% 20%, 28% 10%);
+                  background-color: $color-background !important;
+
+              }
+
+              &::before {
+                  content: '';
+                  position: absolute;
+                  top: -12px;
+                  transform: rotate(90deg);
+                  right: 0;
+                  width: 12px;
+                  height: 12px;
+                  clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 73%, 79% 51%, 64% 34%, 49% 20%, 28% 10%);
+                  background-color: $color-background !important;
+              }
+
+              svg {
+                  fill: white;
+              }
+
+              .icon-holder {
+                  box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.32);
+                  border-radius: 8px;
+                  background-color: $color-primary-btn !important;
+              }
+        }
+    }
+    
+}
+
+.base-icons {
+    fill: $color-primary-btn
+}
+
+.icon-holder {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: $color-background !important;
+    border-radius: 12px 0px 0px 12px;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        transition: all ease 0s !important;
+        top: 80px;
+        right: 0;
+        width: 12px;
+        height: 12px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 73%, 79% 51%, 64% 34%, 49% 20%, 28% 10%);
+        background-color: $color-background !important;
+
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -12px;
+        transform: rotate(90deg);
+        right: 0;
+        width: 12px;
+        height: 12px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 73%, 79% 51%, 64% 34%, 49% 20%, 28% 10%);
+        background-color: $color-background !important;
+    }
+
+    svg {
+        fill: white;
+    }
+
+    .icon-holder {
+        box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.32);
+        border-radius: 8px;
+        background-color: $color-primary-btn !important;
+    }
+}
+
+.ant-layout-content {
+    background: $color-background;
+    margin: 0 !important;
+}
+
+.site-logo {
+    .icon-holder {
+        margin: 0 auto !important;
+        display: block;
+        border-radius: 12px;
+        display: flex;
+        background: #eb956a3d;
+    }
+}
+.settings-layout {
+    margin-left: 24px;
+    background: $color-sidebar;
+    border-radius: 8px;
+    height: 95%;
+    width: 80%;
+  }
+  
+  .settings-menu {
+    height: 95%;
+    width: 330px;
+    background: #1f1d2b;
+    border-radius: 8px;
+  
+    a {
+      display: flex;
+      padding: 25px;
+  
+      svg {
+        margin-right: 10px;
+        margin-top: 3px;
+      }
+  
+      h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 130%;
+        color: #ffffff;
+      }
+  
+      span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 140%;
+        color: $color-text-muted;
+      }
+  
+      &.active {
+        background: rgba(234, 124, 105, 0.26);
+  
+        h3 {
+          color: $color-primary-btn;
+        }
+  
+        svg {
+          fill: $color-primary-btn;
+        }
+      }
+    }
+  }
+  
+  .setting-section {
+    height: 100vh;
+    display: flex;
+  
+    .setting-product-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px;
+      width: 100%;
+  
+      .products-heading {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        color: white;
+      }
+  
+      .preferences-btn {
+        padding: 14px 16px;
+        border: 1px solid #393c49;
+        box-sizing: border-box;
+        border-radius: 8px;
+        align-items: center;
+        display: flex;
+  
+        h3 {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 140%;
+          color: #ffffff;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  
+  .product-nav {
+    padding: 0px 24px;
+    border-bottom: 1px solid #393c49;
+    display: flex;
+  
+    h3 {
+      margin-right: 32px;
+      margin-bottom: 0;
+      font-style: normal;
+      font-weight: 600;
+      padding: 14px 0;
+      font-size: 14px;
+      line-height: 140%;
+      border-bottom: 2px solid transparent;
+      color: #ffffff;
+    }
+  
+    a {
+      &.active h3 {
+        border-bottom: 2px solid $color-primary-btn;
+        color: $color-primary-btn;
+      }
+    }
+  }
+  
+  .dishes-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 24px;
+    max-height: 68vh;
+    overflow-x: scroll;
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .item-adder-btn {
+      text-align: center;
+      min-height: 300px;
+      max-height: 300px;
+      margin: 0 10px 16px 10px;
+      width: 241px;
+      outline: none;
+      border: 1px dashed #EA7C69;
+      background: none;
+      border-radius: 8px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+      color: $color-primary-btn;
+  
+      span {
+        font-size: 42px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        display: inline-block;
+      }
+    }
+  
+    .dish-card {
+      border: 1px solid #393C49;
+      border-radius: 8px;
+      text-align: center;
+      min-height: 300px;
+      margin: 0 10px 16px 10px;
+      max-height: 300px;
+      width: 241px;
+  
+      img {
+        display: block;
+        margin: 18px auto 10px auto;
+        width: 131px;
+        height: 131px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+  
+      .title {
+        font-style: normal;
+        font-weight: 500;
+        height: 47px;
+        overflow: scroll;
+        font-size: 14px;
+        width: 144px;
+        margin: 0 auto 8px;
+        line-height: 130%;
+        text-align: center;
+        color: #FFFFFF;
+  
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+  
+      .dish-info {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+        color: $color-text-muted;
+        margin-bottom: 14px;
+  
+      }
+  
+      .dish-button {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border: none;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 140%;
+        color: $color-primary-btn;
+        padding: 16px;
+        background: rgba(234, 124, 105, 0.287);
+        border-radius: 0px 0px 8px 8px;
+        justify-content: center;
+  
+        svg {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  
+  .ant-modal-footer,
+  .ant-modal-header {
+    background: $color-primary-btn !important
+  }
+  
+  .product-footer {
+    display: flex;
+    padding: 24px 24px 24px 24px;
+  
+    .primary {
+      border-radius: 8px;
+      box-sizing: border-box;
+      transition: all ease 0.5s;
+  
+      h3 {
+        font-style: normal;
+        font-weight: 600;
+        margin: 0;
+        font-size: 14px;
+        line-height: 140%;
+        color: #EA7C69;
+        text-align: center;
+      }
+  
+      border: 1px solid #EA7C69;
+      padding: 14px 36px;
+      margin-right: 8px;
+      display: inline-block;
+  
+      &:hover {
+        background: $color-primary-btn;
+        box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.4);
+  
+  
+        h3 {
+          color: white
+        }
+      }
+  
+      &.save {
+        background: $color-primary-btn;
+        box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.4);
+  
+        h3 {
+          color: white;
+        }
+  
+        &:hover {
+          background: transparent;
+        box-shadow: none;
+  
+  
+          h3 {
+            color: $color-primary-btn
+          }
+        }
+      }
+    }
+  }
+.ant-modal-footer,
+.ant-modal-header {
+  background: $color-sidebar !important;
+  border: none !important
+}
+
+.ant-modal-title {
+  color: white !important
+}
+
+.ant-modal-close-x {
+  svg {
+    fill: white !important;
+  }
+}
+
+.ant-modal-body {
+  .ant-form-item-label>label {
+    color: white !important;
+  }
+
+  .ant-switch-checked {
+    background-color: $color-primary-btn !important;
+  }
+
+  input,
+  .ant-select-selector,
+  .ant-cascader-picker,
+  .ant-input-number-input,
+  .ant-input-number,
+  .ant-picker,
+  .ant-upload {
+    background: #ffffff14 !important;
+    border: none !important;
+  }
+
+  .ant-upload-text {
+    color: white
+  }
+
+  .anticon svg {
+    fill: $color-primary-btn !important;
+  }
+
+  background: $color-background !important;
+}

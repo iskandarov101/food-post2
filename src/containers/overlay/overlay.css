@@ -1,0 +1,209 @@
+.pay{
+    width: 430px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: "Barlow",sans-serif;
+    background: #1F1D2B;
+    border-radius: 16px 16px 0px 16px;
+    padding: 30px 24px 24px 24px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    top: 850px;
+   
+}
+
+.big-overlay{
+width: 100vw;
+height: 100vh;
+background-color: rgba(0, 0, 0, 0.7);
+opacity: 1;
+z-index: 4;
+position: absolute;
+top: 850px;
+transition: ease all 0.6s;
+right: 0;
+opacity: 0;
+z-index: 5;
+}
+
+.big-overlay.activev{
+    top: 0;
+    opacity: 1;
+}
+
+.pay.activev{
+    top: 0;
+    opacity: 1;
+}
+
+.pay-title{
+ 
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin: 0;
+}
+.pay-title_text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #ABBBC2;
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+.pay-head{
+    height: 15%;
+    border-bottom: 1px solid #393C49;
+}
+
+.method{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.method-title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    margin-top: 18px;
+}
+.show{
+    background-color: blue;
+    padding: 20px;
+}
+.credit{
+    width: 30px;
+    padding: 10px;
+    color: white;
+}
+.cards-pay{
+    display: flex;
+    align-items: center;
+}
+.cards-pay input{
+    display: none;
+}
+.cards-pay input:checked ~ label{
+    background: #252836;
+    border: 1px solid #ABBBC2;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: block;
+}
+.cards-pay input:checked ~ label svg{
+    fill: #FFFFFF;
+}
+.cards-pay label{
+    background: #1F1D2B;   
+    border: 1px solid #393C49;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+}
+.cards-pay label svg{
+    display: flex;
+    margin: 0 auto;
+    padding: 0 0 7px 0;
+    fill: #ABBBC2;
+}
+.cards-block{
+    width: 30%;
+    margin-right: 16px;
+}
+.cards-inp label{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #FFFFFF;
+    display: block;
+    margin-bottom: 8px;
+}
+.cards-inp{
+    margin-top: 16px;
+}
+.cards-inp input{
+    background: #2D303E;
+    border: 1px solid #393C49;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: inline-block;
+    width: 100%;
+    padding: 14px;
+    outline: none;
+    border: none;
+    color: white;
+}
+.inp-num{
+    margin-top: 8px;
+}
+.row1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.block{
+    position: absolute;
+    display: none;
+}
+.cards-pay input:checked ~ label .block{
+    display: block;
+    top: 4px;
+    right: 8px;
+}
+.lt{
+    border-top: 1px solid #393C49;
+    margin-top: 16px;
+}
+.btn{
+    display: block;
+    outline: none;
+    border: none;
+    width: 48%;
+    padding: 14px 31px;
+    box-sizing: border-box;
+}
+.btn1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #EA7C69;
+    border: 1px solid #EA7C69;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: transparent;
+}
+.btn2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FAFAFA;
+    background: #EA7C69;
+    box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.4);
+    border-radius: 8px;
+}
+
+.buttons{
+  margin-top: 30px;
+}
